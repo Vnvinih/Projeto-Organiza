@@ -1,0 +1,119 @@
+.mainContainer {
+    display: flex;
+    min-height: 100vh;
+    justify-content: center;
+    align-items: center;
+    background: linear-gradient(to top, #d1d5db, #e5e7eb, #cfe1e6);
+    padding: 1rem;
+  }
+  
+  .formBox {
+    background-color: white;
+    padding: 2.5rem;
+    border-radius: 1.5rem;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    max-width: 24rem;
+    text-align: center;
+  }
+  
+  .title {
+    font-size: 1.875rem;
+    font-weight: bold;
+    color: #374151;
+    margin-bottom: 1.5rem;
+  }
+  
+  .subtitle {
+    font-size: 1.25rem;
+    font-weight: bold;
+    color: #6b7280;
+    margin-bottom: 1rem;
+  }
+  
+  /* Alteração para destacar o container ao focar */
+  .inputContainer {
+    display: flex;
+    align-items: center;
+    border: 1px solid #d1d5db;
+    border-radius: 9999px;
+    margin-bottom: 1.5rem;
+    overflow: hidden;
+    transition: all 0.3s ease; /* Transição suave */
+  }
+  
+  /* Efeito de destaque quando o container recebe o foco */
+  .inputContainer:focus-within {
+    border-color: #6b7280; /* Cor de borda ao focar no container */
+    box-shadow: 0 0 5px rgba(107, 114, 128, 0.5); /* Sombra suave ao focar no container */
+  }
+  
+  .inputContainer span {
+    padding: 0.75rem;
+    background: #f3f4f6;
+    color: #6b7280;
+  }
+  
+  .inputContainer input {
+    flex: 1;
+    padding: 0.75rem;
+    border: none;
+    outline: none;
+    color: #374151;
+  }
+  
+  /* Remove a borda do input quando ele for focado */
+  .inputContainer input:focus {
+    border-color: transparent; /* Evita alteração de borda no input */
+  }
+  
+  .button {
+    background-color: #4CAF50;
+    color: white;
+    font-weight: bold;
+    padding: 0.75rem 1.5rem;
+    border-radius: 9999px;
+    width: 100%;
+    border: none;
+    cursor: pointer;
+  }
+  
+  .button:hover {
+    background-color: #1eb83a;
+  }
+
+  .linksContainer {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 1rem;
+  }
+  
+  .linksContainer .link {
+    color: #6b7280;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 0.875rem;
+  }
+  
+  .linksContainer .link:hover {
+    text-decoration: underline;
+  }
+  
+  .message {
+    margin-top: 10px;
+    padding: 10px;
+    border-radius: 5px;
+    font-weight: bold;
+  }
+  
+  .error {
+    background-color: #f8d7da;
+    color: #721c24;
+  }
+  
+  .success {
+    background-color: #d4edda;
+    color: #155724;
+  }
+ 
+  

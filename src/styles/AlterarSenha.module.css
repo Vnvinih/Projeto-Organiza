@@ -1,0 +1,132 @@
+/* Reutiliza boa parte das classes do ForgotPassword.module.css */
+.mainContainer {
+  display: flex;
+  min-height: 100vh;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 1rem;
+  background: linear-gradient(to top, #d1d5db, #e5e7eb, #cfe1e6);
+}
+
+.formBox {
+  background-color: white;
+  padding: 2.5rem;
+  border-radius: 1.5rem;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  width: 100%;
+  max-width: 24rem;
+  min-height: 28rem;
+}
+
+.formHeader h1 {
+  font-size: 2rem;
+  font-weight: bold;
+  text-align: center;
+  color: #374151;
+  margin-bottom: 1rem;
+}
+
+.formHeader h2 {
+  font-size: 1.25rem;
+  font-weight: bold;
+  text-align: center;
+  color: #374151;
+  margin-bottom: 1rem;
+}
+
+.formHeader p {
+  font-size: 0.875rem;
+  text-align: center;
+  color: #6b7280;
+  margin-bottom: 1.5rem;
+}
+
+/* Alteração para destacar todo o container ao focar */
+.inputContainer {
+  display: flex;
+  align-items: center;
+  border: 1px solid #d1d5db;
+  border-radius: 9999px;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+  margin-bottom: 1.5rem;
+  transition: all 0.3s ease; /* Transição suave */
+}
+
+/* Efeito de destaque quando o input recebe o foco */
+.inputContainer:focus-within {
+  border-color: #6b7280; /* Cor de borda ao focar no container */
+  box-shadow: 0 0 5px rgba(107, 114, 128, 0.5); /* Sombra suave ao focar no container */
+}
+
+.inputContainer span {
+  padding: 0.75rem;
+  background-color: #f3f4f6;
+  color: #6b7280;
+}
+
+.inputContainer input {
+  flex: 1;
+  border: none;
+  padding: 0.75rem;
+  color: #374151;
+  outline: none;
+}
+
+.inputContainer input:focus {
+  border-color: transparent; /* Evita alteração de borda no input */
+}
+
+.inputContainer button {
+  padding: 0.75rem;
+  background-color: #f3f4f6;
+  color: #6b7280;
+  border: none;
+  cursor: pointer;
+}
+
+.button {
+  background-color: #4CAF50;
+  color: white;
+  font-weight: bold;
+  padding: 0.75rem 1.5rem;
+  border-radius: 9999px;
+  width: 100%;
+  text-align: center;
+  cursor: pointer;
+  border: none;
+}
+.button:hover {
+  background-color: #1eb83a;
+}
+
+.message {
+  text-align: center;
+  margin-bottom: 1rem;
+  font-size: 0.875rem;
+}
+
+.message.success {
+  color: #10b981;
+}
+
+.message.error {
+  color: #ef4444;
+}
+
+.linksContainer {
+  margin-top: 1rem;
+  text-align: left;
+ }
+ 
+ .linksContainer .link {
+   color: #6b7280;
+   text-decoration: underline;
+   font-weight: bold;
+   font-size: 0.875rem;
+ }
+ 
+ .linksContainer .link:hover {
+   text-decoration: underline;
+ }

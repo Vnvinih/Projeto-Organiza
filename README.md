@@ -1,40 +1,34 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+# Projeto Organiza
 
-## Getting Started
+# Sobre o Projeto
 
-First, run the development server:
+Organiza é um portal completo de gestão financeira pessoal. Onde o usuário pode facilmente acompanhar suas receitas, controlar suas despesas e monitorar seus investimentos. O objetivo é ajudar o usuário a alcançar a tranquilidade financeira, oferecendo uma plataforma intuitiva e poderosa para gerenciar seu dinheiro.
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+# Funcionalidades Principais
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+Cadastro de Usuários:
+- Os usuários poderão criar contas pessoais com informações básicas.
+- implementação de um sistema seguro de autenticação, fazendo a checagem de todos os dados informados pelo usuário se são válidos ou não.
 
-You can start editing the page by modifying `pages/index.js`. The page auto-updates as you edit the file.
+Gerenciamento de Receitas e Despesas:
+- Os usuários poderão registrar suas receitas e despesas, categorizando-as adequadamente.
+- Os registros incluem data, valor e descrição.
 
-[API routes](https://nextjs.org/docs/api-routes/introduction) can be accessed on [http://localhost:3000/api/hello](http://localhost:3000/api/hello). This endpoint can be edited in `pages/api/hello.js`.
+Definição de Orçamento:
+- Os usuários poderão estabelecer metas de orçamento para diferentes categorias de despesas.
+- A aplicação fornece alertas quando os gastos se aproximam ou excedem o orçamento definido.
 
-The `pages/api` directory is mapped to `/api/*`. Files in this directory are treated as [API routes](https://nextjs.org/docs/api-routes/introduction) instead of React pages.
+Acompanhamento de Investimentos:
+- Os usuários poderão inserir informações sobre seus investimentos, como tipo, valor e instituição.
+- A aplicação calcula o rendimento dos investimentos ao longo do tempo.
 
-This project uses [`next/font`](https://nextjs.org/docs/basic-features/font-optimization) to automatically optimize and load Inter, a custom Google Font.
+Geração de Relatórios:
+- A aplicação gera relatórios detalhados das finanças dos usuários.
 
-## Learn More
+Notificações e Lembretes:
+- Implementação de um sistema de notificações para lembrar os usuários sobre datas importantes de pagamento e vencimento de investimentos.
 
-To learn more about Next.js, take a look at the following resources:
+# Tecnologias Utilizadas
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
-
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+- JavaScript
+- Next.js

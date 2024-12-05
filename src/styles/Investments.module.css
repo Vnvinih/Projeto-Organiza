@@ -1,0 +1,52 @@
+.container {
+    padding: 2rem;
+  }
+  
+  .chartContainer {
+    display: flex;
+    justify-content: space-around;
+    margin-bottom: 2rem;
+  }
+  
+  .barChart {
+    width: 45%;
+  }
+  
+  .pieChart {
+    width: 30%; /* Diminui o tamanho do gráfico de pizza */
+  }
+  
+  .tables {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+  }
+  
+  .table {
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    overflow: hidden;
+  }
+  
+  .table table {
+    width: 100%;
+    border-collapse: collapse;
+  }
+  
+  .table th, .table td {
+    padding: 1rem;
+    text-align: left;
+    border-bottom: 1px solid #ddd;
+  }
+  
+  .table th {
+    background-color: #f9f9f9;
+  }
+  
+  .table h3 {
+    padding: 1rem;
+    background-color: #4CAF50;
+    color: white;
+    margin: 0;
+    font-size: 1.2rem;
+  }

@@ -1,6 +1,6 @@
 import React from "react";
 import { Card, Table } from "react-bootstrap";
-import Grafico from "./Grafico";
+import Grafico from "../pages/Grafico";
 
 const expensesData = [
   { category: "Alimentação", amount: 250 },

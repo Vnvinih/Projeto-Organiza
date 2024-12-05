@@ -13,7 +13,11 @@ import {
 // Registro dos módulos do Chart.js
 ChartJS.register(CategoryScale, LinearScale, BarElement, Title, Tooltip, Legend);
 
-const Grafico = ({ title, data = {} }) => {
+const Grafico = ({ title, data = [] }) => {
+  if (!Array.isArray(data) || data.length === 0) {
+    return <p>Nenhum dado disponível para exibir o gráfico.</p>;
+  }
+
   const chartData = {
     labels: data.map((item) => item.category),
     datasets: [
@@ -41,6 +45,8 @@ const Grafico = ({ title, data = {} }) => {
   };
 
   return <Bar data={chartData} options={options} />;
+  
 };
+
 
 export default Grafico;

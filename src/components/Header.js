@@ -46,7 +46,7 @@ export default function Header() {
           <button className={styles.settingsButton}>Configurações de Notificações</button>
           </Link>
 
-          <Link href="/receitasDespessas" passHref>
+          <Link href="/Grafico" passHref>
           <button className={styles.settingsButton}>Gráficos</button>
           </Link>
           <Link href="/receitasDespessas" passHref>

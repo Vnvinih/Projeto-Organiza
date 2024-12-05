@@ -1,19 +1,19 @@
-import { useState } from "react"; // Importando hook de estado
+import { useState } from "react"; 
 import { FaEnvelope } from "react-icons/fa";
-import styles from "../styles/ForgotPassword.module.css"; // Importando o CSS Module
+import styles from "../styles/ForgotPassword.module.css"; 
 import { Inter } from "next/font/google";
 import { useRouter } from "next/router";
 
 const inter = Inter({ subsets: ["latin"] });
 
 export default function ForgotPassword() {
-  const [email, setEmail] = useState(""); // Estado para o email
-  const [errorMessage, setErrorMessage] = useState(""); // Estado para a mensagem de erro
+  const [email, setEmail] = useState(""); 
+  const [errorMessage, setErrorMessage] = useState(""); 
   const router = useRouter();
 
   const handleSubmit = (e) => {
     e.preventDefault();
-    setErrorMessage(""); // Limpa a mensagem de erro ao submeter o formulário
+    setErrorMessage("");
 
     // Validação do email
     if (!email.includes("@gmail.com")) {

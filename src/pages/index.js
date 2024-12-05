@@ -1,7 +1,7 @@
-import styles from "../styles/Home.module.css"; // Certifique-se de que Home.module.css está na pasta styles
-import Image from "next/image"; // Import do Next.js para otimizar imagens
-import Header from "../components/Header"; // Certifique-se de que o componente Header existe na pasta components
-import Footer from "../components/Footer"; // Certifique-se de que o componente Footer existe na pasta components
+import styles from "../styles/Home.module.css";
+import Image from "next/image";
+import Header from "../components/Header"; 
+import Footer from "../components/Footer"; 
 
 export default function Home() {
   return (
@@ -27,7 +27,7 @@ export default function Home() {
         </div>
         <div className={styles.image}>
           <Image
-            src="/banner.png" // Certifique-se de que esta imagem está na pasta public
+            src="/banner.png"
             alt="Banner Organiza"
             width={600}
             height={400}

@@ -3,14 +3,14 @@ import { useRouter } from "next/router";
 import { FaUser, FaLock } from "react-icons/fa"; 
 import { AiFillEye, AiFillEyeInvisible } from "react-icons/ai"; 
 import styles from "../styles/Login.module.css"; 
-import Loader from "../components/Loader"; // Componente de loader
+import Loader from "../components/Loader"; 
 
 export default function Login() {
   const [username, setUsername] = useState("");
   const [password, setPassword] = useState("");
   const [errorMessage, setErrorMessage] = useState("");
   const [showPassword, setShowPassword] = useState(false);
-  const [isLoading, setIsLoading] = useState(false); // Estado para controlar o carregamento
+  const [isLoading, setIsLoading] = useState(false); 
   const router = useRouter(); 
 
   const handleSubmit = (e) => {
@@ -21,12 +21,12 @@ export default function Login() {
     // Simulação de autenticação
     setTimeout(() => {
       if (username === "admin@gmail.com" && password === "senha123") {
-        router.push("/"); // Redireciona para a página inicial
+        router.push("/"); 
       } else {
         setErrorMessage("Usuário ou senha inválidos.");
       }
-      setIsLoading(false); // Desativa a tela de carregamento
-    }, 2000); // Simula 2 segundos de carregamento
+      setIsLoading(false); 
+    }, 2000);
   };
 
   return (

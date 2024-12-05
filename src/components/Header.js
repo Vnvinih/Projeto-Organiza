@@ -1,6 +1,6 @@
 import styles from '../styles/Home.module.css';
 import Image from 'next/image';
-import Link from 'next/link'; // Importação do componente Link
+import Link from 'next/link'; 
 import { useState } from 'react';
 
 export default function Header() {
@@ -17,9 +17,15 @@ export default function Header() {
       </div>
       <div className={styles.buttonContainer}>
         <div className={styles.leftButtons}>
+          <Link href="/Receitas" passHref>
           <button className={styles.button} aria-label="Receitas">Receitas</button>
+          </Link>
+          <Link href="/Despesas" passHref>
           <button className={styles.button} aria-label="Despesas">Despesas</button>
+          </Link>
+          <Link href="/Investments" passHref>
           <button className={styles.button} aria-label="Investimentos">Investimentos</button>
+          </Link>
         </div>
         <div className={styles.rightButtons}>
 
@@ -40,8 +46,12 @@ export default function Header() {
           <button className={styles.settingsButton}>Configurações de Notificações</button>
           </Link>
 
+          <Link href="/receitasDespessas" passHref>
           <button className={styles.settingsButton}>Gráficos</button>
+          </Link>
+          <Link href="/receitasDespessas" passHref>
           <button className={styles.settingsButton}>Relatórios</button>
+          </Link>
         </div>
       )}
     </header>

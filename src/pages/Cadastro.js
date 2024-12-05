@@ -1,6 +1,6 @@
 import { useState } from 'react';
-import styles from '../styles/Cadastro.module.css'; // Arquivo CSS para esta página
-import { FaEye, FaEyeSlash } from 'react-icons/fa'; // Importação dos ícones
+import styles from '../styles/Cadastro.module.css';
+import { FaEye, FaEyeSlash } from 'react-icons/fa';
 import { useRouter } from "next/router";
 
 export default function Cadastro() {

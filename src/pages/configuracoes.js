@@ -42,15 +42,13 @@ export default function ConfiguracaoNotificacoes() {
     setStatusMessage('');
 
     try {
-      // Simulação de integração com o backend (substitua com seu backend real)
-      // Aqui adicionamos a notificação à lista de notificações.
       setNotificacoes((prevState) => [
         ...prevState,
         { ...formData, id: Date.now() },
       ]);
 
       setStatusMessage('Notificação configurada com sucesso!');
-      setFormData({ tipo: '', data: '', recorrencia: 'Mensal' }); // Limpa o formulário após sucesso
+      setFormData({ tipo: '', data: '', recorrencia: 'Mensal' }); 
     } catch (error) {
       setStatusMessage('Erro ao configurar a notificação!');
     } finally {
